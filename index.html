@@ -22,7 +22,14 @@ body{background:linear-gradient(170deg,#fff8fc 0%,#fffcf6 52%,#f8f4ff 100%)}
 .section-panel.active{display:block!important}
 html{scroll-padding-top:18px}
 @media(max-width:600px){.nav .wrap{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px!important}.nav button{width:100%;padding:11px 7px!important;font-size:13px!important}.sectionhead h2{font-size:1.35rem}}
-.wishphoto{display:block;width:100%;height:172px;object-fit:cover;border-radius:14px 14px 0 0}.wishfallback{height:152px;background:linear-gradient(135deg,#f9e0ed,#ede3fc);border-radius:14px 14px 0 0;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#885e83;font-size:2rem}.wishfallback small{font-size:.82rem}.wishitem{overflow:hidden;padding:0}.wishitem .actions{gap:5px;flex-wrap:wrap}.wishitem .actions .btn{font-size:.74rem;padding:7px 8px}</style></head><body>
+.wishphoto{display:block;width:100%;height:172px;object-fit:cover;border-radius:14px 14px 0 0}.wishfallback{height:152px;background:linear-gradient(135deg,#f9e0ed,#ede3fc);border-radius:14px 14px 0 0;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#885e83;font-size:2rem}.wishfallback small{font-size:.82rem}.wishitem{overflow:hidden;padding:0}.wishitem .actions{gap:5px;flex-wrap:wrap}.wishitem .actions .btn{font-size:.74rem;padding:7px 8px}
+/* Fix flight-summary cards overlapping the multi-row navigation */
+.nav{position:relative!important;display:block!important;z-index:3!important;overflow:visible!important}
+main.wrap{padding-top:22px!important}
+main .overview{margin-top:0!important;margin-bottom:26px!important;position:relative!important;z-index:1!important}
+main .overview .stat{min-width:0!important}
+@media(max-width:640px){main.wrap{padding-top:16px!important}main .overview{margin-top:0!important;gap:10px!important}}
+</style></head><body>
 <header class="hero"><div class="wrap"><div class="topbar"><div class="brand">🌷 BUSAN BLOOM · 2026</div><div class="pills"><span class="pill">👭 3位女生</span><span class="pill">📍 南浦洞住宿</span><span class="pill">11/12 — 11/15</span></div></div><h1>釜山，把美好<br>裝進四天裡 ✨</h1><p>你的隨身互動式自由行導遊：每天去哪裡、怎麼搭、吃什麼、怎麼入境、雨天怎麼改，打開就能找到。</p><div class="hero-actions"><button class="btn light" onclick="go('itinerary')">🗓️ 開始看4天行程</button><button class="btn" onclick="shareTrip()">🔗 分享給朋友</button><button class="btn" onclick="window.print()">🖨️ 列印手冊</button></div></div></header>
 <div class="nav no-print"><div class="wrap" id="nav"></div></div>
 <main class="wrap"><div class="overview"><div class="stat"><span>✈️ 去程 · ZE984</span><strong>11/12 02:50 → 06:05</strong></div><div class="stat"><span>🏨 住宿 · 3晚</span><strong>Nampo Wa Hotel</strong></div><div class="stat"><span>🎆 無人機表演</span><strong>11/14 19:00 預計</strong></div><div class="stat"><span>✈️ 回程 · IT607</span><strong>11/15 20:50 → 22:30</strong></div></div>
